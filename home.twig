@@ -1,0 +1,31 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+        <!-- Template Feature Widget -->
+
+        {{widget('gallery', 'homepagegallery',
+        {'showDescription': true,
+        'showTitle': true,
+        'images':
+        [
+        {'imageHeight':'500', 'imageWidth':'500', 'url':asset('/images/gallery/1.jpg'),'title':'Lorem Ipsum', 'description':'Duis mattis semper ipsum, lobortis rutrum pretium ast magnimus.'},
+        {'imageHeight':'500', 'imageWidth':'500', 'url':asset('/images/gallery/2.jpg')},
+        {'imageHeight':'500', 'imageWidth':'500', 'url':asset('/images/gallery/3.jpg')},
+        {'imageHeight':'500', 'imageWidth':'500', 'url':asset('/images/gallery/4.jpg')},
+        {'imageHeight':'500', 'imageWidth':'500', 'url':asset('/images/gallery/5.jpg')},
+        {'imageHeight':'500', 'imageWidth':'500', 'url':asset('/images/gallery/6.jpg')},
+        {'imageHeight':'500', 'imageWidth':'500', 'url':asset('/images/gallery/7.jpg')},
+        {'imageHeight':'500', 'imageWidth':'500', 'url':asset('/images/gallery/8.jpg')},
+        {'imageHeight':'500', 'imageWidth':'500', 'url':asset('/images/gallery/9.jpg')}
+        ]
+        })|raw}}
+
+        <!-- Main Widget Zone -->
+
+        {{zone('main')|raw}}
+
+{% endblock %}
+
+
+
